@@ -1,0 +1,32 @@
+<div class="header">
+  <div class="menu-items">
+    <a class="menu-item" (click)="navigateToAboutUs()">About Us</a>
+    <a class="menu-item" [routerLink]="NavigationRoutes.services" [routerLinkActive]="'active'">Services</a>
+    <a class="menu-item" [routerLink]="NavigationRoutes.workflow" [routerLinkActive]="'active'">Workflow</a>
+    <a class="menu-item" [routerLink]="NavigationRoutes.portfolio" [routerLinkActive]="'active'">Portfolio</a>
+  </div>
+
+  <div class="logo-wrapper">
+    <a [routerLink]="['/']">
+        <img src="assets/images/logo-dark-transparent-cropped.svg" alt="logo">
+    </a>
+  </div>
+
+  <div class="menu-items justify-content-end">
+    <div class="social-media-wrapper">
+      <a class="social" target="_blank" href="https://www.instagram.com/magicrender.studio/">
+        <svg-icon src="assets/images/svg/instagram-icon.svg"></svg-icon>
+      </a>
+
+      <a class="social" target="_blank" href="https://www.behance.net/magicrestudio?fbclid=PAAaYIfVriBrHVwt2rTioEVm9pwnZtsG_u0IfodW8yVYzvOsrUum2t7PUuwNY">
+        <svg-icon src="assets/images/svg/behance-icon.svg"></svg-icon>
+      </a>
+
+      <a class="social" target="_blank" href="https://www.linkedin.com/company/magicrender-studio/">
+        <svg-icon src="assets/images/svg/linkedin-icon.svg"></svg-icon>
+      </a>
+    </div>
+
+    <button pButton pRipple type="button" label="Contact Us" class="p-button-primary"></button>
+  </div>
+</div>

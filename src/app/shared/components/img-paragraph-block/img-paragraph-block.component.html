@@ -1,0 +1,35 @@
+<!-- <div [class.reverse-folding]="reverseFoldingOrder">
+  <h3 class="subtitle-text bold c-primary-blue">{{title}}</h3>
+  <div class="image-block"
+      [class.reverse]="reverseColumnsOrder">
+      <img class="image" [src]="imageSrc" alt="{{imageAlt}}" loading="lazy">
+  </div>
+
+  <div>
+      <p class="body-text mt-20">{{text}}<p>
+
+      <div class="d-flex xs-justify-content-center mx-xs--10 mt-30">
+        <button class="ant-btn-primary mt-40"
+                nz-button
+                nzType="default"
+                nzSize="large">
+          <span class="text-uppercase">
+            <a href="https://app.automaticusa.com/dealer-sign-up" target="_blank">
+              Register Now
+            </a>
+          </span>
+        </button>
+      </div>
+  </div>
+</div> -->
+
+<div [class.reverse-folding]="reverseFoldingOrder" class="block-container">
+  <div class="img-block" [ngStyle]="{'background-image': 'url(' + imageSrc + ')'}"></div>
+  <div class="description-block">
+    <div [class.reverse-text-align]="reverseFoldingOrder">
+      <h3 class="subtitle-text bold text-uppercase mb-20">{{title}}</h3>
+      <div class="body-text mb-20">{{text}}</div>
+      <button pButton pRipple type="button" label="See portfolio" class="p-button-secondary" (click)="navigateToPortfolio()"></button>
+    </div>
+  </div>
+</div>

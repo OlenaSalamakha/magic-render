@@ -1,0 +1,120 @@
+
+// :host {
+//   display: block;
+
+//   h3 {
+//     max-width: 430px;
+//   }
+
+
+//   .image {
+//     display: block;
+//     width: 100%;
+//     position: relative;
+//     bottom: 75px;
+//     height: 260px;
+
+//     margin-bottom: 60px;
+//   }
+
+//   .reverse-folding {
+//     .image {
+//       margin-bottom: 0;
+//       margin-top: 60px;
+//     }
+//   }
+
+//   .image-block {
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: center;
+//   }
+
+//   .reverse-folding {
+//     display: flex;
+//     flex-flow: column-reverse nowrap;
+//   }
+
+// //   @media (min-width: @lg) {
+// //     .image {
+// //       padding: 0;
+// //     }
+// //   }
+
+// //   @media (max-width: @xl) {
+// //     h3, p {
+// //       max-width: 417px;
+// //       text-align: center;
+// //       margin: auto;
+// //     }
+
+// //     button {
+// //       margin: auto;
+// //     }
+
+// //     .image {
+// //       bottom: 0;
+// //       height: 100%;
+// //       max-width: 330px;
+// //       margin: auto;
+// //       margin-top: 40px !important;
+// //       margin-bottom: 0 !important;
+// //     }
+
+// //     .image-block {
+// //       padding-left: 50px;
+
+// //       &.reverse {
+// //         padding-left: 0;
+// //         padding-right: 50px;
+// //       }
+// //     }
+
+// //     .reverse-folding {
+// //       display: flex;
+// //       flex-direction: row;
+// //     }
+// //   }
+
+// // @media (max-width: @sm) {
+// //     .image-block {
+// //       padding-left: 0;
+// //     }
+
+// //     .image {
+// //       max-width: 280px;
+// //     }
+// //   }
+// }
+
+.block-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+
+  .img-block {
+    width: 560px;
+    min-width: 560px;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .description-block {
+    width: 500px;
+    height: 420px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.reverse-folding {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+}
+
+.reverse-text-align {
+  text-align: right;
+}

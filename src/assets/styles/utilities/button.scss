@@ -1,0 +1,51 @@
+.p-button {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+
+  &:hover {
+    transition: 0.8s;
+  }
+
+  &.btn-small {
+    height: 10px;
+  }
+}
+
+.p-button-primary {
+  background-color: #D6AD60 !important;
+  border: 1px solid #D6AD60 !important;
+  border-radius: 3px !important;
+
+
+  .p-button-label {
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: transparent !important;
+
+    .p-button-label {
+      color: #1B1A17 !important;
+    }
+  }
+}
+
+.p-button-secondary {
+  background-color: #000000 !important;
+  border: 1px solid #000000 !important;
+  border-radius: 3px !important;
+
+  .p-button-label {
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: transparent !important;
+
+
+    .p-button-label {
+      color: #000000 !important;
+    }
+  }
+}

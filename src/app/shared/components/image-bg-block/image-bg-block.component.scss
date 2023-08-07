@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+
+.header-wrapper {
+  width: 100%;
+  height: auto;
+
+  .bg-img {
+    display: block;
+    width: 100%;
+    height: calc(80vh - 125px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

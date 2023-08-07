@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+
+// GLOBAL (overrides)
+@import './assets/styles/global/theme-overrides.scss';
+@import './assets/styles/global/typography-overrides.scss';
+@import './assets/styles/global/media.scss';
+
+// UTILITIES
+
+@import './assets/styles/utilities/button.scss';
+@import './assets/styles/utilities/display.scss';
+@import './assets/styles/utilities/typography.scss';
+@import './assets/styles/utilities/spacing.scss';
+@import './assets/styles/utilities/text.scss';
